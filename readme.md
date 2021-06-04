@@ -1,6 +1,6 @@
 # vue-apply-darkmode
 
-Drop-in dark mode for Vue 3.0+ apps. Apply dark mode directly to your site or app in one step;
+Drop-in dark mode for Vue 3.x apps. Apply dark mode directly to your site or app in one step;
 no manual theming required! Cut down on component complexity and CSS while still delivering a
 high-quality dark mode experience that your users will greatly appreciate.
 
@@ -16,11 +16,21 @@ Users **do NOT** need to have the Dark Reader extension installed for dark mode 
 
 `yarn add vue-apply-darkmode`
 
-## Usage
+## Import
+
+### Vue 3.x
 
 ```javascript
 import interpolator from "vue-apply-darkmode";
 ```
+
+### Vue 2.x (your NuxtJS version may apply)
+
+```javascript
+import interpolator from "vue-apply-darkmode/src/vue-apply-darkmode.vue";
+```
+
+## Usage
 
 Wrap your root component **once** with `<interpolator>`:
 
