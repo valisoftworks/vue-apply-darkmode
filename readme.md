@@ -123,6 +123,6 @@ will give you a good idea of how well it works.
 This package was created by [Victor Li](https://github.com/victorli08), an avid
 user of the Dark Reader extension.
 
-`vue-apply-darkmode` is made possible by [@darkreader](https://github.com/darkreader/darkreader).
-If you like this package, please give a shoutout to Dark Reader's developers and consider
+`vue-apply-darkmode` is made possible by the open source [@darkreader](https://github.com/darkreader/darkreader)
+project. If you like this package, please give a shoutout to Dark Reader's developers and consider
 sponsoring their project!
