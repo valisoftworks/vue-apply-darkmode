@@ -1,7 +1,16 @@
 {
   "name": "vue-apply-darkmode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Drop-in dark mode for VueJS projects.",
+  "homepage": "https://github.com/valisoftworks/vue-apply-darkmode#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valisoftworks/vue-apply-darkmode"
+  },
+  "bugs": {
+    "url": "https://github.com/valisoftworks/vue-apply-darkmode/issues"
+  },
+  "license": "MIT",
   "main": "dist/vue-apply-darkmode.ssr.js",
   "browser": "dist/vue-apply-darkmode.esm.js",
   "module": "dist/vue-apply-darkmode.esm.js",
