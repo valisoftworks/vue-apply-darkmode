@@ -2,6 +2,15 @@
   "name": "vue-apply-darkmode",
   "version": "1.0.2",
   "description": "Drop-in dark mode for VueJS projects.",
+  "keywords": [
+    "vue",
+    "vue2",
+    "vue3",
+    "darkreader",
+    "dark-theme",
+    "dark-mode",
+    "component"
+  ],
   "homepage": "https://github.com/valisoftworks/vue-apply-darkmode#readme",
   "repository": {
     "type": "git",
