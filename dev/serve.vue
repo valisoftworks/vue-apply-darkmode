@@ -7,11 +7,22 @@ export default defineComponent({
   components: {
     interpolator,
   },
+  data() {
+    return {
+      isDarkMode: false,
+    };
+  },
+  methods: {
+    toggleDarkMode() {
+      this.isDarkMode = this.isDarkMode ? false : true;
+    },
+  },
 });
 </script>
 
 <template>
   <div id="app">
-    <interpolator :dark="true" />
+    <interpolator :dark="isDarkMode" />
+    <button @click="toggleDarkMode">Toggle</button>
   </div>
 </template>

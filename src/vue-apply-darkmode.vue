@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-apply-darkmode">
+  <div class="vue-apply-darkmode-root">
     <slot></slot>
   </div>
 </template>
@@ -15,7 +15,6 @@ export default {
   },
   data() {
     return {
-      activeDark: this.dark,
       systemDark: false,
       mq: null,
     };
@@ -30,7 +29,7 @@ export default {
     },
   },
   watch: {
-    activeDark() {
+    dark() {
       this.toggleDarkMode();
     },
     systemDark() {
@@ -47,7 +46,7 @@ export default {
     }
     this.toggleDarkMode();
   },
-  beforeDestroy() {
+  beforeUnmount() {
     if (this.mq !== null) {
       this.mq.removeEventListener("change", this.updateSystemTheme);
     }
@@ -63,7 +62,7 @@ export default {
           disable: disableDarkMode,
         } = require("darkreader");
 
-        if (this.activeDark || (!this.activeDark && this.systemDark)) {
+        if (this.dark || (!this.dark && this.systemDark)) {
           enableDarkMode({
             brightness: this.brightness,
             contrast: this.contrast,
